@@ -9,6 +9,8 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 
+const CONTRACT_ADDRESS = "0xb73C0740815451a3b4BecaEB097d66Dd12581f37";
+
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
   
@@ -95,9 +97,9 @@ const App = () => {
       console.log(error)
     }
   }
-  
+
   const askContractToMintNft = async () => {
-  const CONTRACT_ADDRESS = "0xb73C0740815451a3b4BecaEB097d66Dd12581f37";
+ 
 
   try {
     const { ethereum } = window;
